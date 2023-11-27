@@ -6,8 +6,8 @@ from sqlmodel import Session, SQLModel, create_engine
 PG_USERNAME = "root"
 PG_PASSWORD = "postgres"
 PG_HOST = "localhost"
-PG_PORT = 54321
-PG_DATABASE = ""
+PG_PORT = 54323
+PG_DATABASE = "airline_db"
 
 # CONFIGURAÇÃO CONEXÃO
 connect_args = {}

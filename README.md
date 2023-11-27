@@ -44,4 +44,4 @@ poetry run uvicorn src.server:app --reload
 
 ## Próximos passos
 
-Siga as instruções da prova que estão no moodle
+Siga as instruções da prova que estão no moodle.
