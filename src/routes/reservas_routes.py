@@ -32,7 +32,6 @@ def cria_reserva(reserva: Reserva):
 
         # TODO - Validar se existe uma reserva para o mesmo documento
 
-
         codigo_reserva = "".join(
             [str(random.randint(0, 999)).zfill(3) for _ in range(2)]
         )
@@ -44,8 +43,9 @@ def cria_reserva(reserva: Reserva):
         return reserva
 
 
-# TODO - Implementar reserva de poltrona
+@reservas_router.post("/{codigo_reserva}/checkin/{num_poltrona}")
+def faz_checkin(codigo_reserva: str, num_poltrona: int):
+    # TODO - Implementar reserva de poltrona
+    pass
 
 # TODO - Implementar troca de reserva de poltrona
-
-
