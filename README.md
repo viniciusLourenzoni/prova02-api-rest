@@ -45,3 +45,36 @@ poetry run uvicorn src.server:app --reload
 ## Próximos passos
 
 Siga as instruções da prova que estão no moodle.
+
+
+## Corpos das requisições 
+
+- POST http://localhost:8000/voos
+```json
+{
+  "data_saida": "2023-11-27T09:38",
+  "nome_piloto": "Neil Armstrong",
+  "nome_copiloto":"Lito Sousa"
+}
+```
+
+- GET http://localhost:8000/voos
+Sem corpo
+
+- GET http://localhost:8000/voos/vendas
+
+- POST http://localhost:8000/reservas
+```json
+{
+  "nome": "Fulano de tal",
+  "documento": "123453214",
+  "voo_id": 1
+}
+```
+
+- POST http://localhost:8000/reserva/:codigo_reserva/checkin/:num_poltrona
+Sem corpo
+
+- PATCH http://localhost:8000/reserva/:codigo_reserva/checkin/:num_poltrona
+Sem corpo
+
